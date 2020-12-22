@@ -1,0 +1,24 @@
+C:\Users\akcae\OneDrive\Masaüstü\ToDo\ToDo\Project.DAL\bin\Debug\netcoreapp3.1\Project.DAL.deps.json
+C:\Users\akcae\OneDrive\Masaüstü\ToDo\ToDo\Project.DAL\bin\Debug\netcoreapp3.1\Project.DAL.runtimeconfig.json
+C:\Users\akcae\OneDrive\Masaüstü\ToDo\ToDo\Project.DAL\bin\Debug\netcoreapp3.1\Project.DAL.runtimeconfig.dev.json
+C:\Users\akcae\OneDrive\Masaüstü\ToDo\ToDo\Project.DAL\bin\Debug\netcoreapp3.1\Project.DAL.dll
+C:\Users\akcae\OneDrive\Masaüstü\ToDo\ToDo\Project.DAL\bin\Debug\netcoreapp3.1\Project.DAL.pdb
+C:\Users\akcae\OneDrive\Masaüstü\ToDo\ToDo\Project.DAL\obj\Debug\netcoreapp3.1\Project.DAL.csprojAssemblyReference.cache
+C:\Users\akcae\OneDrive\Masaüstü\ToDo\ToDo\Project.DAL\obj\Debug\netcoreapp3.1\Project.DAL.AssemblyInfoInputs.cache
+C:\Users\akcae\OneDrive\Masaüstü\ToDo\ToDo\Project.DAL\obj\Debug\netcoreapp3.1\Project.DAL.AssemblyInfo.cs
+C:\Users\akcae\OneDrive\Masaüstü\ToDo\ToDo\Project.DAL\obj\Debug\netcoreapp3.1\Project.DAL.csproj.CoreCompileInputs.cache
+C:\Users\akcae\OneDrive\Masaüstü\ToDo\ToDo\Project.DAL\obj\Debug\netcoreapp3.1\Project.DAL.dll
+C:\Users\akcae\OneDrive\Masaüstü\ToDo\ToDo\Project.DAL\obj\Debug\netcoreapp3.1\Project.DAL.pdb
+C:\Users\akcae\OneDrive\Masaüstü\ToDo\ToDo\Project.DAL\obj\Debug\netcoreapp3.1\Project.DAL.genruntimeconfig.cache
+C:\Users\akcae\OneDrive\Masaüstü\Mazaka İnterview\Be\Project.DAL\bin\Debug\netcoreapp3.1\Project.DAL.deps.json
+C:\Users\akcae\OneDrive\Masaüstü\Mazaka İnterview\Be\Project.DAL\bin\Debug\netcoreapp3.1\Project.DAL.runtimeconfig.json
+C:\Users\akcae\OneDrive\Masaüstü\Mazaka İnterview\Be\Project.DAL\bin\Debug\netcoreapp3.1\Project.DAL.runtimeconfig.dev.json
+C:\Users\akcae\OneDrive\Masaüstü\Mazaka İnterview\Be\Project.DAL\bin\Debug\netcoreapp3.1\Project.DAL.dll
+C:\Users\akcae\OneDrive\Masaüstü\Mazaka İnterview\Be\Project.DAL\bin\Debug\netcoreapp3.1\Project.DAL.pdb
+C:\Users\akcae\OneDrive\Masaüstü\Mazaka İnterview\Be\Project.DAL\obj\Debug\netcoreapp3.1\Project.DAL.csprojAssemblyReference.cache
+C:\Users\akcae\OneDrive\Masaüstü\Mazaka İnterview\Be\Project.DAL\obj\Debug\netcoreapp3.1\Project.DAL.AssemblyInfoInputs.cache
+C:\Users\akcae\OneDrive\Masaüstü\Mazaka İnterview\Be\Project.DAL\obj\Debug\netcoreapp3.1\Project.DAL.AssemblyInfo.cs
+C:\Users\akcae\OneDrive\Masaüstü\Mazaka İnterview\Be\Project.DAL\obj\Debug\netcoreapp3.1\Project.DAL.csproj.CoreCompileInputs.cache
+C:\Users\akcae\OneDrive\Masaüstü\Mazaka İnterview\Be\Project.DAL\obj\Debug\netcoreapp3.1\Project.DAL.dll
+C:\Users\akcae\OneDrive\Masaüstü\Mazaka İnterview\Be\Project.DAL\obj\Debug\netcoreapp3.1\Project.DAL.pdb
+C:\Users\akcae\OneDrive\Masaüstü\Mazaka İnterview\Be\Project.DAL\obj\Debug\netcoreapp3.1\Project.DAL.genruntimeconfig.cache

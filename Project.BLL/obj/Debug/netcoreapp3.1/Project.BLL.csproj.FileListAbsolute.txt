@@ -1,0 +1,24 @@
+C:\Users\akcae\OneDrive\Masaüstü\ToDo\ToDo\Project.BLL\bin\Debug\netcoreapp3.1\Project.BLL.deps.json
+C:\Users\akcae\OneDrive\Masaüstü\ToDo\ToDo\Project.BLL\bin\Debug\netcoreapp3.1\Project.BLL.dll
+C:\Users\akcae\OneDrive\Masaüstü\ToDo\ToDo\Project.BLL\bin\Debug\netcoreapp3.1\Project.BLL.pdb
+C:\Users\akcae\OneDrive\Masaüstü\ToDo\ToDo\Project.BLL\bin\Debug\netcoreapp3.1\Project.DAL.dll
+C:\Users\akcae\OneDrive\Masaüstü\ToDo\ToDo\Project.BLL\bin\Debug\netcoreapp3.1\Project.DAL.pdb
+C:\Users\akcae\OneDrive\Masaüstü\ToDo\ToDo\Project.BLL\obj\Debug\netcoreapp3.1\Project.BLL.csprojAssemblyReference.cache
+C:\Users\akcae\OneDrive\Masaüstü\ToDo\ToDo\Project.BLL\obj\Debug\netcoreapp3.1\Project.BLL.AssemblyInfoInputs.cache
+C:\Users\akcae\OneDrive\Masaüstü\ToDo\ToDo\Project.BLL\obj\Debug\netcoreapp3.1\Project.BLL.AssemblyInfo.cs
+C:\Users\akcae\OneDrive\Masaüstü\ToDo\ToDo\Project.BLL\obj\Debug\netcoreapp3.1\Project.BLL.csproj.CoreCompileInputs.cache
+C:\Users\akcae\OneDrive\Masaüstü\ToDo\ToDo\Project.BLL\obj\Debug\netcoreapp3.1\Project.BLL.csproj.CopyComplete
+C:\Users\akcae\OneDrive\Masaüstü\ToDo\ToDo\Project.BLL\obj\Debug\netcoreapp3.1\Project.BLL.dll
+C:\Users\akcae\OneDrive\Masaüstü\ToDo\ToDo\Project.BLL\obj\Debug\netcoreapp3.1\Project.BLL.pdb
+C:\Users\akcae\OneDrive\Masaüstü\Mazaka İnterview\Be\Project.BLL\bin\Debug\netcoreapp3.1\Project.BLL.deps.json
+C:\Users\akcae\OneDrive\Masaüstü\Mazaka İnterview\Be\Project.BLL\bin\Debug\netcoreapp3.1\Project.BLL.dll
+C:\Users\akcae\OneDrive\Masaüstü\Mazaka İnterview\Be\Project.BLL\bin\Debug\netcoreapp3.1\Project.BLL.pdb
+C:\Users\akcae\OneDrive\Masaüstü\Mazaka İnterview\Be\Project.BLL\bin\Debug\netcoreapp3.1\Project.DAL.dll
+C:\Users\akcae\OneDrive\Masaüstü\Mazaka İnterview\Be\Project.BLL\bin\Debug\netcoreapp3.1\Project.DAL.pdb
+C:\Users\akcae\OneDrive\Masaüstü\Mazaka İnterview\Be\Project.BLL\obj\Debug\netcoreapp3.1\Project.BLL.csprojAssemblyReference.cache
+C:\Users\akcae\OneDrive\Masaüstü\Mazaka İnterview\Be\Project.BLL\obj\Debug\netcoreapp3.1\Project.BLL.AssemblyInfoInputs.cache
+C:\Users\akcae\OneDrive\Masaüstü\Mazaka İnterview\Be\Project.BLL\obj\Debug\netcoreapp3.1\Project.BLL.AssemblyInfo.cs
+C:\Users\akcae\OneDrive\Masaüstü\Mazaka İnterview\Be\Project.BLL\obj\Debug\netcoreapp3.1\Project.BLL.csproj.CoreCompileInputs.cache
+C:\Users\akcae\OneDrive\Masaüstü\Mazaka İnterview\Be\Project.BLL\obj\Debug\netcoreapp3.1\Project.BLL.csproj.CopyComplete
+C:\Users\akcae\OneDrive\Masaüstü\Mazaka İnterview\Be\Project.BLL\obj\Debug\netcoreapp3.1\Project.BLL.dll
+C:\Users\akcae\OneDrive\Masaüstü\Mazaka İnterview\Be\Project.BLL\obj\Debug\netcoreapp3.1\Project.BLL.pdb
