@@ -105,19 +105,12 @@ namespace Project.BLL.Services
 
         public static async Task<Task<List<DTOTask>>> Close(ToDoTaskResponse task, IHttpClientFactory _clientFactory)
         {
-            /*
-            var todoItemJson = new StringContent(
-                          System.Text.Json.JsonSerializer.Serialize(task, _jsonSerializerOptions),
-                          Encoding.UTF8,
-                          "application/json");
-            */
-            var httpClient = _clientFactory.CreateClient();
-            httpClient.DefaultRequestHeaders.Add(header1, header2);
+
             var request =
-            new HttpRequestMessage(HttpMethod.Post, url + task.id + "/close");
+              new HttpRequestMessage(HttpMethod.Post, url + "/" + +task.id + "/close");
+            request.Headers.Add(header1, header2);
             var client = _clientFactory.CreateClient();
             var response = await client.SendAsync(request);
-
             if (response.IsSuccessStatusCode)
             {
                 return GetByProjectID(_clientFactory);
@@ -126,14 +119,6 @@ namespace Project.BLL.Services
             {
                 return null;
             }
-            /*
-            using var httpResponse =
-                await httpClient.PostAsync(url+ task.id + "/close", todoItemJson);
-
-            httpResponse.EnsureSuccessStatusCode();
-            */
-
-
         }
 
         public static Task<List<DTOTask>> Status(long id, IHttpClientFactory _clientFactory)

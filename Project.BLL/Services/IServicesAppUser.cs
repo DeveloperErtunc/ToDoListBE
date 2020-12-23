@@ -19,7 +19,6 @@ namespace Project.BLL.Services
 {
     public interface IServicesAppUser
     {
-
         Task<UserResponse> RegisterUserAsync(DTOAppUser _DTOAppUser);
         Task<UserResponse> LoginUserAsync(DTOAppUser dtoAppUser);
         Task<UserResponse> ToAdmin(DTOAppUser dtoAppUser);
@@ -62,9 +61,7 @@ namespace Project.BLL.Services
                     };
 
                 }
-
                 #endregion
-
                 #region SigUp
                 ClaimUser claimUser = new ClaimUser();
                 claimUser.ClaimValue = "User";
@@ -72,39 +69,39 @@ namespace Project.BLL.Services
                 _userManager.CreateAsync(MapperUser.ToAppUser(_DTOAppUser), _DTOAppUser.Password);
 
                 if (result.Succeeded)
-                    {
-                        AppUser user2 = await _userManager.FindByEmailAsync
-                            (email: _DTOAppUser.Email);
-                        claimUser.UserId = user2.Id;
-                        _dataBase.UserClaims.Add(claimUser);
-                        _dataBase.SaveChanges();
+                {
+                    AppUser user2 = await _userManager.FindByEmailAsync
+                        (email: _DTOAppUser.Email);
+                    claimUser.UserId = user2.Id;
+                    _dataBase.UserClaims.Add(claimUser);
+                    _dataBase.SaveChanges();
 
-                        return new UserResponse
-                        {
-                            Message = "Üyelik Oluşturuldu",
-                            IsSuccess = true
-
-                        };
-                    }
-                    else
+                    return new UserResponse
                     {
-                        List<string> listError = new List<string>();
-                        foreach( var response in result.Errors )
-                        {
-                            listError.Add(response.Description);
-                        }
-                        return new UserResponse
-                        {
-                            Erorrs = listError,
-                            IsSuccess = false
-                        };
+                        Message = "Üyelik Oluşturuldu",
+                        IsSuccess = true
+
+                    };
+                }
+                else
+                {
+                    List<string> listError = new List<string>();
+                    foreach( var response in result.Errors )
+                    {
+                        listError.Add(response.Description);
                     }
+                    return new UserResponse
+                    {
+                        Erorrs = listError,
+                        IsSuccess = false
+                    };
+                }
                 #endregion
             }
+
             public async Task<UserResponse> LoginUserAsync(DTOAppUser model)
             {
                 #region Validation
-
                 AppUser user = _dataBase.Users.Where(x => x.Email == model.Email).FirstOrDefault();
                 if (user == null)
                 {
@@ -131,12 +128,13 @@ namespace Project.BLL.Services
                 SymmetricSecurityKey key = new SymmetricSecurityKey(bytes);
                 List<Claim> listclaim = new List<Claim>();
                 List<string> listclaim2 = new List<string>();
+                
                 foreach (var item in _dataBase.UserClaims.ToList().Where(x => x.Id == user.Id))
                 {
                     listclaim.Add(new Claim(ClaimTypes.Role,item.ClaimValue));
+                    listclaim.Add(new Claim("UserID",Convert.ToString(item.UserId)));
                     listclaim2.Add(item.ClaimValue);
                 } 
-              
 
                 SigningCredentials _signingCredentials = new SigningCredentials(key, SecurityAlgorithms.HmacSha256);
                 JwtSecurityToken _securityToken = new JwtSecurityToken
@@ -152,34 +150,11 @@ namespace Project.BLL.Services
 
                 return new UserResponse
                 {
+
                     ClaimRole = listclaim2,
-                    Message = jwtSecurityTokenHandler.WriteToken(_securityToken),
+                    Token = jwtSecurityTokenHandler.WriteToken(_securityToken),
                     IsSuccess = true,
                 };
-                #endregion
-
-                #region Token Way 1
-                /*var claims = new[]
-                {
-                new Claim("Email",model.Email),
-                new Claim(ClaimTypes.NameIdentifier,Convert.ToString(user.Id))
-                };
-
-                var key = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(_configuration["AuthSettings:Key"]));
-                var token = new JwtSecurityToken(
-                    issuer: _configuration["AuthSettings:Issuer"],
-                    audience: _configuration["AuthSettings:Audience"],
-                    claims: claims,
-                    expires: DateTime.Now.AddDays(30),
-                    signingCredentials: new SigningCredentials(key, SecurityAlgorithms.HmacSha256)
-                    );
-                string tokenAsString = new JwtSecurityTokenHandler().WriteToken(token);
-                return new UserManagerResponse
-                {
-                    Message = tokenAsString,
-                    IsSuccess = true,
-                    Date = token.ValidTo
-                }; */
                 #endregion
             }
 
@@ -200,7 +175,6 @@ namespace Project.BLL.Services
                         Message = "Admin Olarak atandı"
                     };
                 }
-
                 catch
                 {
                     return new UserResponse
@@ -208,9 +182,7 @@ namespace Project.BLL.Services
                         Message = "Admin Atanamadı"
                     };
                 }
-            
             }
-
         }
     }
 }

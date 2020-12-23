@@ -10,6 +10,7 @@ namespace Project.BLL.ResponseClasses
         {
             Erorrs = new List<string>();
         }
+        public string Token { get; set; }
         public string Message { get; set; }
         public bool IsSuccess { get; set; }
         public List<string> Erorrs { get; set; }

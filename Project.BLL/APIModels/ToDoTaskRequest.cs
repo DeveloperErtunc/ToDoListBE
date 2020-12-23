@@ -8,6 +8,5 @@ namespace Project.BLL.APIModels
     public class ToDoTaskRequest:ToDoTaskBase
     {
         public string due_date { get; set; }
-
     }
 }

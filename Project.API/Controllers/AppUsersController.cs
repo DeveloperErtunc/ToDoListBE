@@ -10,9 +10,11 @@ using Project.BLL.ResponseClasses;
 using Project.DAL.Models;
 using Project.DAL.Context;
 using Project.BLL.Mapper;
+using Microsoft.AspNetCore.Authorization;
 
 namespace Project.API.Controllers
 {
+    
     [ApiController]
     [Route("api/users")]
     public class AppUsersController : ControllerBase
@@ -52,7 +54,7 @@ namespace Project.API.Controllers
 
         [HttpGet]
         [Route("id")]
-        public DTOAppUser Register(int id)
+        public DTOAppUser UserDetail(int id)
         
         {
           
@@ -66,48 +68,13 @@ namespace Project.API.Controllers
             return null;
         }
 
-
-        [HttpPost]
-        [Route("login")]
-        public DTOAppUser Login(DTOAppUser dTOAppUser)
-        {
-            AppUser appUser = _database.Users.FirstOrDefault(x => x.Email == dTOAppUser.Email);
-            var   s =  _signInManager.CanSignInAsync(appUser); 
-
-            if (appUser != null && s.Result)
-            {
-
-                return MapperUser.ToDTOAppUser(appUser);
-            }
-            else
-            {
-                return new DTOAppUser
-                {
-                    Message = "Password or Email is wrong."
-                };
-            }
-
-        }
-
-
-        /* [HttpPost]
+         [HttpPost]
          [Route("login")]
-         public async Task<DTOAppUser> Login(DTOAppUser dTOAppUser)
+         public async Task<UserResponse> Login(DTOAppUser dTOAppUser)
          {
 
-             AppUser appUser = _database.Users.FirstOrDefault(x => x.UserName == dTOAppUser.UserName);
-             if(appUser != null)
-             {
-
-                 return appUser;
-             }
-
-
              return(await _servicesAppUser.LoginUserAsync(dTOAppUser));
-
-         }*/
-
-     
+         }
 
         [HttpPost]
         [Route("toadmin")]
